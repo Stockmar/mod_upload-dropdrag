@@ -14,70 +14,41 @@ defined('_JEXEC') or die;
 <section id="mod-upload-dropdrag">
 	<?php echo 'hallo world' ?>
 
-<div class="container">
-
-    <br>
-    <blockquote>
-        <p>File Upload widget with multiple file selection, drag&amp;drop support, progress bar, validation and preview images, audio and video for jQuery.<br>
-        Supports cross-domain, chunked and resumable file uploads and client-side image resizing.<br>
-        Works with any server-side platform (PHP, Python, Ruby on Rails, Java, Node.js, Go etc.) that supports standard HTML form file uploads.</p>
-    </blockquote>
-    <br>
-    <!-- The fileinput-button span is used to style the file input field as button -->
-    <span class="btn btn-success fileinput-button">
-        <i class="glyphicon glyphicon-plus"></i>
-        <span>Add files...</span>
-        <!-- The file input field used as target for the file upload widget -->
-        <input id="fileupload" type="file" name="files[]" multiple>
-    </span>
-    <br>
-    <br>
-    <!-- The global progress bar -->
-    <div id="progress" class="progress">
-        <div class="progress-bar progress-bar-success"></div>
-    </div>
-    <!-- The container for the uploaded files -->
-    <div id="files" class="files"></div>
-    <br>
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title">Demo Notes</h3>
-        </div>
-        <div class="panel-body">
-            <ul>
-                <li>The maximum file size for uploads in this demo is <strong>5 MB</strong> (default file size is unlimited).</li>
-                <li>Only image files (<strong>JPG, GIF, PNG</strong>) are allowed in this demo (by default there is no file type restriction).</li>
-                <li>Uploaded files will be deleted automatically after <strong>5 minutes</strong> (demo setting).</li>
-                <li>You can <strong>drag &amp; drop</strong> files from your desktop on this webpage (see <a href="https://github.com/blueimp/jQuery-File-Upload/wiki/Browser-support">Browser support</a>).</li>
-                <li>Please refer to the <a href="https://github.com/blueimp/jQuery-File-Upload">project website</a> and <a href="https://github.com/blueimp/jQuery-File-Upload/wiki">documentation</a> for more information.</li>
-                <li>Built with the <a href="http://getbootstrap.com/">Bootstrap</a> CSS framework and Icons from <a href="http://glyphicons.com/">Glyphicons</a>.</li>
-            </ul>
-        </div>
-    </div>
-</div>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
-<script src="js/vendor/jquery.ui.widget.js"></script>
-<!-- The Load Image plugin is included for the preview images and image resizing functionality -->
-<script src="//blueimp.github.io/JavaScript-Load-Image/js/load-image.all.min.js"></script>
-<!-- The Canvas to Blob plugin is included for image resizing functionality -->
-<script src="//blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js"></script>
-<!-- Bootstrap JS is not required, but included for the responsive demo navigation -->
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
-<script src="js/jquery.iframe-transport.js"></script>
-<!-- The basic File Upload plugin -->
-<script src="js/jquery.fileupload.js"></script>
-<!-- The File Upload processing plugin -->
-<script src="js/jquery.fileupload-process.js"></script>
-<!-- The File Upload image preview & resize plugin -->
-<script src="js/jquery.fileupload-image.js"></script>
-<!-- The File Upload audio preview plugin -->
-<script src="js/jquery.fileupload-audio.js"></script>
-<!-- The File Upload video preview plugin -->
-<script src="js/jquery.fileupload-video.js"></script>
-<!-- The File Upload validation plugin -->
-<script src="js/jquery.fileupload-validate.js"></script>
+	<div class="container">
+	    <br>
+	    <!-- The fileinput-button span is used to style the file input field as button -->
+	    <span class="btn btn-success fileinput-button">
+	        <i class="glyphicon glyphicon-plus"></i>
+	        <span>Add files...</span>
+	        <!-- The file input field used as target for the file upload widget -->
+	        <input id="fileupload" type="file" name="files[]" multiple>
+	    </span>
+	    <br>
+	    <br>
+	    <!-- The global progress bar -->
+	    <div id="progress" class="progress">
+	        <div class="progress-bar progress-bar-success"></div>
+	    </div>
+	    <!-- The container for the uploaded files -->
+	    <div id="files" class="files"></div>
+	    <br>
+	    <div class="panel panel-default">
+	        <div class="panel-heading">
+	            <h3 class="panel-title">Demo Notes</h3>
+	        </div>
+	        <div class="panel-body">
+	            <ul>
+	                <li>The maximum file size for uploads in this demo is <strong>5 MB</strong> (default file size is unlimited).</li>
+	                <li>Only image files (<strong>JPG, GIF, PNG</strong>) are allowed in this demo (by default there is no file type restriction).</li>
+	                <li>Uploaded files will be deleted automatically after <strong>5 minutes</strong> (demo setting).</li>
+	                <li>You can <strong>drag &amp; drop</strong> files from your desktop on this webpage (see <a href="https://github.com/blueimp/jQuery-File-Upload/wiki/Browser-support">Browser support</a>).</li>
+	                <li>Please refer to the <a href="https://github.com/blueimp/jQuery-File-Upload">project website</a> and <a href="https://github.com/blueimp/jQuery-File-Upload/wiki">documentation</a> for more information.</li>
+	                <li>Built with the <a href="http://getbootstrap.com/">Bootstrap</a> CSS framework and Icons from <a href="http://glyphicons.com/">Glyphicons</a>.</li>
+	            </ul>
+	        </div>
+	    </div>
+	</div>
+</section>
 <script>
 /*jslint unparam: true, regexp: true */
 /*global window, $ */
@@ -181,5 +152,3 @@ $(function () {
         .parent().addClass($.support.fileInput ? undefined : 'disabled');
 });
 </script>
-
-</section>
