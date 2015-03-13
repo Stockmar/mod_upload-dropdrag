@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.3" client="site" method="upgrade">
+	<name>Upload Drop N' Drag</name>
+	<author>Stockmar</author>
+	<creationDate>13/03/2015</creationDate>
+	<copyright>Copyright (C) 2015 Stockmar. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>info@stockmar.dk</authorEmail>
+	<authorUrl>www.jeppestockmar.dk</authorUrl>
+	<version>1.0</version>
+	<description>		
+		<![CDATA[
+		<div>
+			Booom Drop N´Drag uploader...
+		</div>	
+		<p>v. 1.0</p>
+		]]>
+	</description>
+	<files>
+		<filename module="mod_upload-dropdrag">mod_upload-dropdrag.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>README.md</filename>
+		<folder>css</folder>
+		<folder>img</folder>
+		<folder>js</folder>
+		<folder>tmpl</folder>
+		<folder>language</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_upload-dropdrag.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_upload-dropdrag.sys.ini</language>
+		<language tag="da-DK">language/da-DK/da-DK.mod_upload-dropdrag.ini</language>
+		<language tag="da-DK">language/da-DK/da-DK.mod_upload-dropdrag.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/modules/mod_upload-dropdrag/css/template.css">
+			</fieldset>
+			<fieldset name="Options">
+			</fieldset>
+		</fields>
+	</config>
+</extension>
