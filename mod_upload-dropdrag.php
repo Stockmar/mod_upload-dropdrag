@@ -15,6 +15,8 @@ defined('_JEXEC') or die;
 
 // 	Include the helper.
  require_once __DIR__ . '/helper.php';
+jimport('joomla.filesystem.folder');
+
 
 // 	Load the method jquery script.
 JHtml::_('jquery.framework');
@@ -24,11 +26,13 @@ $doc =& JFactory::getDocument();
 
 
 
-
+$dir = JFolder::files($folder);
 
 // 	add the stylesheet
+$doc->addStylesheet('maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css');
 $doc->addStylesheet( JURI::root(true) . '/modules/mod_upload-dropdrag/css/style.css' );
 // 	add the jquery
+$doc->addScript('maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js');
 $doc->addScript( JURI::root(true) . '/modules/mod_upload-dropdrag/js/??????.js');
 
 
